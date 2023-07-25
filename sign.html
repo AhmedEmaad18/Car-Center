@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    
+    <meta charset="utf-8">
+    <meta name ="description" content="Welcome to my page ">
+    <title>signup</title>
+    <link rel ="stylesheet" href="style.css">
+        <link rel ="stylesheet" href="./web.css">
+        
+         <script type="text/javascript">
+          function validateform(){
+                var valid = true;
+                if (document.register.username.value=="") {
+           
+                    alert("Name is empty");
+                    document.register.username.focus();
+                    valid=false;
+                }
+                else if (document.register.email.value=="") {
+           
+                    alert("Email is empty");
+                    document.register.email.focus();
+                    valid = false;
+                }
+                else
+                {
+                    if(document.register.email.value.indexOf("@")==-1||document.register.email.value.indexOf(".")==-1)
+                    {
+           
+                        alert("please enter valid email");
+                        document.register.email.focus();
+                        valid = false;
+                    }
+          
+                }
+         
+                return valid;
+            }
+         function myfunction(){
+          if (document.getElementById("demo").value.length<5) {
+          alert("password is Low");
+          return false;
+          }
+          
+         }
+         
+        </script>
+         
+    </head>
+<body>
+    
+   
+     
+    <div class="box">
+        
+        <h2>Register</h2>
+        
+        <form name="register" onsubmit="return validateform()">
+            
+            <div class="inputBox">
+
+             <input type="text" name="username" >
+             <label style="font-size:large">Username</label>
+            </div>
+            <div class="inputBox">
+             <input  type ="text" name="email" >
+             <label style="font-size:large">Email</label>
+            </div>
+            <div class="inputBox" >
+                <input type="password" name="password" id="demo">
+                <label style="font-size:large">Password</label>
+                
+            </div>
+        
+            
+            <input type="submit" name="" value="Submit" onclick="return myfunction ()">
+        </form>
+    </div>
+
+    
+    
+</body>    
+</html>
+
+   

@@ -1,0 +1,185 @@
+﻿*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body {
+    font-family:'Times New Roman', Times, serif;
+    margin:0px;
+    border:0px;
+}
+#header {
+    width: 100%;
+    height: 50px;
+    background-color: #2c3e50;
+    margin: 0 auto;
+}
+a{
+    text-decoration:none;
+}
+.logo{
+    float:left;
+    margin-top:7px;
+    margin-left:15px;
+}
+.logo a {
+    font-size:1.6em;
+    color:#fff;
+}
+.logo a span{
+    font-weight:300;
+}
+
+.sidebar {
+    width: 180px;
+    height: 100%;
+    background-color: #2c3e50;
+    float: left;
+}
+ul#nav li {
+        list-style: none;
+        color:aliceblue;
+
+}
+ul#nav li .button {
+            color: #000;
+            display: block;
+            padding: 10px;
+            font-size: 18px;
+            border:none;
+            background:#fff;
+            padding-top:10px;
+            text-transform:uppercase;
+            cursor:pointer;
+
+}
+    ul#nav li .button:hover {
+        background-color: #222f3e;
+        color: #fff;
+        padding-left: 10px;
+    }
+.contenent {
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    min-width:100vh;
+    display:flex;
+    font-family: Consolas;
+    padding-top:10px;
+
+}
+.contact {
+    box-sizing: border-box;
+    border: 2px solid #000;
+    cursor: pointer;
+  
+}
+.contact:hover{
+    background:#000;
+    color:#fff;
+}
+.contact h2{
+    margin:0;
+    padding:0;
+    width:100%;
+    box-sizing:border-box;
+
+}
+.contact h2 span {
+    display:inline-block;
+} 
+.contact.active{
+    width :800px;
+    min-height:400px;
+}
+.contact.active h2 span
+{
+
+    transform:rotate(45 deg);
+    float:right;
+    
+}
+    .contact.active:hover{
+        background:#000;
+        color:#fff;
+
+    }
+form{
+    padding:20px;
+    box-sizing:border-box;
+
+}
+form .row {
+
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    
+
+}
+form .row .col-2{
+
+
+    width:calc(50%-10px);
+    box-sizing:border-box;
+    margin-bottom:20px;
+
+}
+    form .row  .col-2:nth-child(odd) {
+        margin-right: 10px;
+    }
+
+    form .row .col-2:nth-child(even) {
+        margin-left: 10px;
+    }
+
+    form .row  .col-1 {
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+    }
+form .contact label{
+    display:block;
+    font-size:18px;
+    margin-bottom:5px;
+    font-weight:bold;
+
+}
+.contact input .text,
+.contact textarea
+{
+    width:100%;
+    border:2px solid #000;
+    padding:10px;
+    outline:none;
+    box-sizing:border-box;
+    font-weight:bold;
+    font-size:18px; 
+    font-family:Consolas;
+    resize:none;
+
+}
+.contact textarea {
+    height: 150px;
+}
+.contact input [type="submit"] {
+    border: 2px solid #000;
+    padding: 10px;
+    outline: none;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-size: 18px;
+    font-family:Consolas;
+    cursor:pointer;
+    background:#000;
+    color:#fff;
+
+}
+.contact active form {
+visibility:visible;
+display:block;
+
+
+}

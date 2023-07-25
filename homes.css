@@ -1,0 +1,91 @@
+﻿*{
+    padding:0px;
+    margin:0px;
+    box-sizing:border-box
+  }
+  
+  
+  body {
+  
+      background-image: url();
+      line-height:1;
+      background-color:#000;
+      
+  
+  
+  }
+  a{
+  
+      text-decoration:none;
+  }
+  .text-primary{
+  
+      color:#e9d926;
+      font-family:Andalus;
+      font-size:xx-large;
+  }
+  #navbar{
+      display:flex;
+      position:sticky;
+      top:0;
+      background-color:rgb(51,51,51,0.4);
+      justify-content:space-between;
+      padding:1rem;
+      z-index:1;
+  }
+  #navbar ul{
+      display:flex;
+      list-style:none;
+      align-items:center;
+  
+  }
+  #navbar ul li a{
+  
+      color:#fff;
+      margin:0 0.25rem;
+      padding:0.75rem;
+     font-size: 18px ;
+        font-family: Algerian ;
+        letter-spacing: 0.5px ;
+   
+  
+  }
+      #navbar ul li a:hover {
+          background-color: #e9d926;
+          border-radius: 5px;
+      }
+  #showcase {
+      background: #333 url('home.png')no-repeat center center/cover;
+      height: 100vh;
+      color: #fff;
+  }
+  #showcase .showcase-content{
+      
+      
+      
+      justify-content:left;
+      align-items:center;
+      height:100vh;
+      position:absolute;
+      top:65px;
+      left:0;
+      right:0;
+      bottom:0;
+      background:rgb(0,0,0,0.4);
+  }
+  .l-heading{
+      font-family:'Times New Roman', Times, serif;
+      font-size:4rem;
+      margin-bottom:0.75rem;
+      line-height:1.1;
+  }
+  .lead{
+      font-size:1.3rem;
+      margin-bottom:2rem;
+      font-family:Aharoni
+  }
+  #search {
+      background-color: #000;
+      list-style: none;
+      margin-bottom:1rem;
+  }

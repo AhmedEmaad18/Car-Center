@@ -1,0 +1,84 @@
+﻿<!!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="admin style.css">
+    <title>Admin</title>
+  
+</head>
+<body>
+    <div id="header">
+    <div class="logo"><a href="home.html">Home <span>page</span></a></div>
+
+    </div>
+   
+    <div class="sidebar">
+
+
+        <ul id="nav">
+
+            <li><button class="button">switch color</button>
+
+        </ul>
+        <script type="text/javascript">
+            var color = ["#222f3e" ,"#f368e0", "#ee5235", "#0abde3", "#10ac84",
+                "#222f3e", "#5f27cd"];
+            var i = 0;
+            document.querySelector("button").addEventListener("click", function(){
+                i = i < color.length ? ++i : 0;
+                document.querySelector("body").style.background = color[i]
+            })
+        </script>
+
+    </div>
+    <div class="contenent">
+        <div class="contact" id="contact">
+            <h2 onclick="toggleclass()">get in touch with us<span>+</span></h2>
+            <form>
+                <div class="row">
+                    <div class="col-2">
+                        <label>first name </label>
+                        <input type="text" name="" class="text" placeholder="mahmoud" />
+                    </div>
+                    <div class="col-2">
+                        <label>last name </label>
+                        <input type="text" name="" class="text" placeholder="selim" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        <label>email address </label>
+                        <input type="text" name="" class="text" placeholder="mahmoud@trgfd.com" />
+                    </div>
+                    <div class="col-2">
+                        <label>telephone numper  </label>
+                        <input type="text" name="" class="text" placeholder="+91863598" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 ">
+                        <label>your message</label>
+                        <textarea placeholder="write your message here ..."></textarea>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <input type="submit" name="" value="send messsage" />
+                    </div>
+                </div>
+            </form>
+
+               </div>
+        <script type="text/javascript">
+            function toggleclass() {
+                var element = document.getElementById('contact');
+                element.classList.toggle("active")
+
+            }
+
+        </script>
+    </div>
+    
+</body>
+</html>
